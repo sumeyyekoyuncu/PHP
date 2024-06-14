@@ -24,13 +24,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $harf_notu = "FF";
     }
 
-    // Sonucu JSON formatında oluşturma
+   
     $response = array(
         'ortalama' => round($ortalama, 2),
         'harf_notu' => $harf_notu
     );
     
-    // JSON olarak sonucu döndürme
+   
     echo json_encode($response);
 }
 ?>
